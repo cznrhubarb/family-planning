@@ -1,4 +1,4 @@
-Family Planning
+# Family Planning
 
 Family Planning is a physics-based block-stacking game used as a metaphor for building a family tree. In this game you will get marry off adults, who will have children so that when they get older, someone will prevent them from dying too early. The children will then get older themselves and perpetuate the cycle. I'm essentially calling families a form of pyramid scheme.
 

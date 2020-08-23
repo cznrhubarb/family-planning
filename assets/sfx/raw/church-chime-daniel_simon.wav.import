@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/church-chime-daniel_simon.wav-6a4770b6730041ab71ce9b293762be62.sample"
+
+[deps]
+
+source_file="res://assets/sfx/raw/church-chime-daniel_simon.wav"
+dest_files=[ "res://.import/church-chime-daniel_simon.wav-6a4770b6730041ab71ce9b293762be62.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

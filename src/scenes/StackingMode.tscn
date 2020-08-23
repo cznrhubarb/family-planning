@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/img/maturity_line.png" type="Texture" id=2]
+[ext_resource path="res://src/scenes/MaturityLine.gd" type="Script" id=3]
+[ext_resource path="res://src/scenes/StackingMode.gd" type="Script" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 319.03, 59 )
+
+[node name="StackingMode" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="BackgroundLayer" type="Node2D" parent="."]
+
+[node name="PortraitLayer" type="Node2D" parent="."]
+
+[node name="PlayField" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Camera2D" type="Camera2D" parent="PlayField"]
+position = Vector2( 0, -84 )
+current = true
+
+[node name="BirthingLine" type="Sprite" parent="PlayField"]
+visible = false
+position = Vector2( 0, -3 )
+texture = ExtResource( 2 )
+
+[node name="BirthingZone" type="Area2D" parent="PlayField/BirthingLine"]
+position = Vector2( 0, 59 )
+
+[node name="Shape" type="CollisionShape2D" parent="PlayField/BirthingLine/BirthingZone"]
+position = Vector2( 0.840912, 33.6358 )
+shape = SubResource( 1 )
+
+[node name="MaturityLine" type="Sprite" parent="PlayField"]
+visible = false
+position = Vector2( 0, -184 )
+texture = ExtResource( 2 )
+
+[node name="TopCanvas" type="CanvasLayer" parent="."]
+[connection signal="input_event" from="PlayField/BirthingLine/BirthingZone" to="." method="_on_BirthingZone_input_event"]

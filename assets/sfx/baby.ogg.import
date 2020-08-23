@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/baby.ogg-2008ada658b73dd826491971de7f7aed.oggstr"
+
+[deps]
+
+source_file="res://assets/sfx/baby.ogg"
+dest_files=[ "res://.import/baby.ogg-2008ada658b73dd826491971de7f7aed.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

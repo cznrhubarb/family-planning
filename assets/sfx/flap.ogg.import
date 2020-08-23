@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/flap.ogg-ba89b036ef6f8a3ff6e45fcaf2dd5b4d.oggstr"
+
+[deps]
+
+source_file="res://assets/sfx/flap.ogg"
+dest_files=[ "res://.import/flap.ogg-ba89b036ef6f8a3ff6e45fcaf2dd5b4d.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

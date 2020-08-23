@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/just_born_baby-daniel_simon.wav-04f73de5831d53a7df1ca552b1f6c9d4.sample"
+
+[deps]
+
+source_file="res://assets/sfx/raw/just_born_baby-daniel_simon.wav"
+dest_files=[ "res://.import/just_born_baby-daniel_simon.wav-04f73de5831d53a7df1ca552b1f6c9d4.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

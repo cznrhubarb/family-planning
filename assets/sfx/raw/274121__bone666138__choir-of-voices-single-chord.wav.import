@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/274121__bone666138__choir-of-voices-single-chord.wav-80614e779dbec08c32d06b372b3c7183.sample"
+
+[deps]
+
+source_file="res://assets/sfx/raw/274121__bone666138__choir-of-voices-single-chord.wav"
+dest_files=[ "res://.import/274121__bone666138__choir-of-voices-single-chord.wav-80614e779dbec08c32d06b372b3c7183.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,184 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://src/menus/InstructionsMenu.gd" type="Script" id=1]
+[ext_resource path="res://assets/Acme-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/acmefont.tres" type="DynamicFont" id=3]
+[ext_resource path="res://assets/img/arrows.png" type="Texture" id=4]
+[ext_resource path="res://src/actors/Portrait.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/img/hand-Sheet.png" type="Texture" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 28
+font_data = ExtResource( 2 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "Tap"
+loop = true
+tracks/0/type = "method"
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.4 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "bump_bell"
+} ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("hand:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 0 ]
+}
+
+[node name="InstructionsMenu" type="Node2D"]
+pause_mode = 2
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 643.0
+margin_bottom = 481.0
+color = Color( 0.815686, 0.921569, 0.54902, 0.027451 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+margin_left = 12.0
+margin_top = 348.0
+margin_right = 628.0
+margin_bottom = 452.0
+color = Color( 0.117647, 0.588235, 0.113725, 0.211765 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="."]
+margin_left = 259.252
+margin_top = 12.4726
+margin_right = 395.252
+margin_bottom = 48.4726
+custom_fonts/font = SubResource( 1 )
+text = "Instructions"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ClickAnywhere" type="Label" parent="."]
+margin_left = 255.688
+margin_top = 452.577
+margin_right = 401.688
+margin_bottom = 473.577
+custom_fonts/font = ExtResource( 3 )
+text = "Click anywhere to start"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GetOlder" type="Label" parent="."]
+margin_left = 4.60028
+margin_top = 190.545
+margin_right = 108.6
+margin_bottom = 283.545
+custom_fonts/font = ExtResource( 3 )
+text = "People get older when their portraits cross the lines"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GetOlder2" type="Label" parent="."]
+margin_left = 172.393
+margin_top = 195.414
+margin_right = 304.393
+margin_bottom = 288.414
+custom_fonts/font = ExtResource( 3 )
+text = "Tap unmarried adults quickly to fill their bell and get them married"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GetOlder3" type="Label" parent="."]
+margin_left = 436.01
+margin_top = 255.27
+margin_right = 617.01
+margin_bottom = 348.27
+custom_fonts/font = ExtResource( 3 )
+text = "Married adults have children when their hearts are full
+(hearts fill automatically)"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GetOlder5" type="Label" parent="."]
+margin_left = -10.2992
+margin_top = 389.477
+margin_right = 518.701
+margin_bottom = 411.477
+custom_fonts/font = ExtResource( 3 )
+text = "Place the portraits of children down here when someone has a baby!"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GetOlder4" type="Label" parent="."]
+margin_left = 468.0
+margin_top = 42.898
+margin_right = 618.0
+margin_bottom = 135.898
+custom_fonts/font = ExtResource( 3 )
+text = "The elderly will fall if they don't have anyone to support them. Don't let that happen!"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="arrows" type="Sprite" parent="."]
+position = Vector2( 124.892, 231.415 )
+texture = ExtResource( 4 )
+
+[node name="SinglePortrait" parent="." instance=ExtResource( 5 )]
+position = Vector2( 321.448, 185.096 )
+
+[node name="MarriedPortrait" parent="." instance=ExtResource( 5 )]
+position = Vector2( 560.262, 220.538 )
+
+[node name="MarriedPortrait2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 496.078, 220.538 )
+
+[node name="ElderlyPortrait" parent="." instance=ExtResource( 5 )]
+position = Vector2( 426.93, 86.3658 )
+
+[node name="ChildPortrait" parent="." instance=ExtResource( 5 )]
+position = Vector2( 544.93, 401.345 )
+
+[node name="hand" type="Sprite" parent="."]
+position = Vector2( 342.585, 192.495 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 6 )
+hframes = 2
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Tap"
+anims/Tap = SubResource( 2 )
+[connection signal="gui_input" from="ColorRect" to="." method="_on_ColorRect_gui_input"]

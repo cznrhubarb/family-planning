@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bells_with_crows.ogg-895734886a0c162abf006a506a8edf04.oggstr"
+
+[deps]
+
+source_file="res://assets/sfx/bells_with_crows.ogg"
+dest_files=[ "res://.import/bells_with_crows.ogg-895734886a0c162abf006a506a8edf04.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

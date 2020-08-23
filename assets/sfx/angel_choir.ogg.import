@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/angel_choir.ogg-38f7e1fcd50f24c2a98c26c3695144ed.oggstr"
+
+[deps]
+
+source_file="res://assets/sfx/angel_choir.ogg"
+dest_files=[ "res://.import/angel_choir.ogg-38f7e1fcd50f24c2a98c26c3695144ed.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

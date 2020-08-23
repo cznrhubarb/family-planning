@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/wedding_bells.ogg-d60a0353dcdabaec93da3aaa4b37a1dd.oggstr"
+
+[deps]
+
+source_file="res://assets/sfx/wedding_bells.ogg"
+dest_files=[ "res://.import/wedding_bells.ogg-d60a0353dcdabaec93da3aaa4b37a1dd.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bell_two.ogg-e4bee5ce58a447a79d709f3135a4ebb7.oggstr"
+
+[deps]
+
+source_file="res://assets/sfx/bell_two.ogg"
+dest_files=[ "res://.import/bell_two.ogg-e4bee5ce58a447a79d709f3135a4ebb7.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

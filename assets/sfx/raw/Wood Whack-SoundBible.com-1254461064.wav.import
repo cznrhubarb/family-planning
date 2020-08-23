@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Wood Whack-SoundBible.com-1254461064.wav-927a8513bb3ba39c57f25669df566cdd.sample"
+
+[deps]
+
+source_file="res://assets/sfx/raw/Wood Whack-SoundBible.com-1254461064.wav"
+dest_files=[ "res://.import/Wood Whack-SoundBible.com-1254461064.wav-927a8513bb3ba39c57f25669df566cdd.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

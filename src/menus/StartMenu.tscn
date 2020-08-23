@@ -1,0 +1,72 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://src/menus/StartMenu.gd" type="Script" id=1]
+[ext_resource path="res://assets/Yellowtail-Regular.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/img/portrait_frame.png" type="Texture" id=3]
+[ext_resource path="res://assets/acmefont.tres" type="DynamicFont" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 58
+extra_spacing_top = 12
+font_data = ExtResource( 2 )
+
+[node name="StartMenu" type="Node2D"]
+pause_mode = 2
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 635.0
+margin_bottom = 481.0
+color = Color( 0.815686, 0.921569, 0.54902, 0.027451 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Line2D" type="Line2D" parent="."]
+position = Vector2( 75, 48 )
+points = PoolVector2Array( 151.843, 90.09, 151.933, 105.871, 180.944, 105.871, 180.83, 121.455 )
+width = 5.0
+default_color = Color( 0, 0, 0, 1 )
+
+[node name="Title" type="Label" parent="."]
+margin_left = 197.732
+margin_top = 59.2005
+margin_right = 501.732
+margin_bottom = 270.201
+custom_fonts/font = SubResource( 1 )
+text = "F   amily
+  P  lanning"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="portrait_frame" type="Sprite" parent="."]
+position = Vector2( 227.941, 107.531 )
+texture = ExtResource( 3 )
+
+[node name="portrait_frame2" type="Sprite" parent="."]
+position = Vector2( 253.201, 196.414 )
+texture = ExtResource( 3 )
+
+[node name="InstructionsButton" type="Button" parent="."]
+margin_left = 457.979
+margin_top = 443.319
+margin_right = 633.979
+margin_bottom = 474.319
+text = "Show me how to play first"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 247.295
+margin_top = 340.739
+margin_right = 392.295
+margin_bottom = 354.739
+custom_fonts/font = ExtResource( 4 )
+text = "Click anywhere to start"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="gui_input" from="ColorRect" to="." method="_on_ColorRect_gui_input"]
+[connection signal="pressed" from="InstructionsButton" to="." method="_on_InstructionsButton_pressed"]
